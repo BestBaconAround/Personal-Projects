@@ -1,0 +1,71 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  color: gold;
+  background: black;
+  overflow: hidden;
+}
+
+/* === Full-width & full-height background video === */
+.video-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.video-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(40px) brightness(0.4);
+}
+
+/* === Foreground Grid Content === */
+.site-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 15px;
+}
+
+#magnoliapark {
+  font-size: 2rem;
+}
+
+/* 3-Column Main Layout */
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+/* Side and Center Content */
+.left, .right, .center, header, footer {
+  background-color: rgba(0, 0, 0, 0.3); /* semi-transparent to show video underneath */
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+}
