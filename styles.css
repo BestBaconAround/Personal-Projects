@@ -69,3 +69,11 @@ main {
   border-radius: 10px;
   backdrop-filter: blur(6px);
 }
+/* center image of magnolia band */
+#center-image {
+  width: 400px;
+  height: auto;
+}
+#center-image .center {
+  height: 1000px;
+}
