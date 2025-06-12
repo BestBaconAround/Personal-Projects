@@ -1,4 +1,33 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+    font-weight: 500;
+}
+
+body {
+    background-color: #faebd7;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: white;
+    position: relative;
+}
+
+.title-name {
+    font-size: 2.5rem;
+    color: rgb(111, 88, 68);
+}
+
+.menu-toggle {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: rgb(111, 88, 68);
+    cursor: pointer;
 }
